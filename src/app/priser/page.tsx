@@ -37,6 +37,13 @@ const priceGroups = [
         newSet: "950 kr",
         refill: "800 kr",
       },
+      {
+        name: "Wet Look",
+        description:
+          "Vippene samles i smale, tydelige «spikes» som gir en blank og våt mascara-effekt. Passer for deg som ønsker et markert, moderne og elegant uttrykk.",
+        newSet: "950 kr",
+        refill: "800 kr",
+      },
     ],
   },
   {
