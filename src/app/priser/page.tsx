@@ -70,6 +70,13 @@ const priceGroups = [
         newSet: "985 kr",
         refill: "850 kr",
       },
+      {
+        name: "Mega Volume",
+        description:
+          "Håndlagde vifter med flere ultratynne vipper. Gir maksimal fylde, en mørkere vippelinje og et dramatisk resultat.",
+        newSet: "1099 kr",
+        refill: "950 kr",
+      },
     ],
   },
   {
