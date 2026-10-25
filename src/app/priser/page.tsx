@@ -66,7 +66,7 @@ const priceGroups = [
       {
         name: "Volume V-shape 4D, 5D",
         description:
-          "V-formede vifter som gir tydelig definisjon og et fyldig, elegant uttrykk.",
+          "Eyeliner-effekt: V-formede vipper gir en tettere og mørkere vippekant, som skaper en naturlig eyeliner-effekt uten sminke.",
         newSet: "950 kr",
         refill: "800 kr",
       },
