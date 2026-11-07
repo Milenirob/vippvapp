@@ -5,7 +5,15 @@ export const metadata: Metadata = {
   description: "Se priser og behandlinger for vippeextensions hos Vipp & Vapp.",
 };
 
-const priceGroups = [
+type PriceItem = {
+  name: string;
+  description: string;
+  newSet: string;
+  refill: string | null;
+  isNew?: boolean;
+};
+
+const priceGroups: { title: string; items: PriceItem[] }[] = [
   {
     title: "Klassisk & Mix",
     items: [
@@ -17,11 +25,19 @@ const priceGroups = [
         refill: "650 kr",
       },
       {
-        name: "Klassisk+ 2:1",
+        name: "Klassisk+",
+        isNew: true,
         description:
-          "To extensions på én naturlig vippe. Litt fyldigere enn klassisk, men fortsatt naturlig.",
-        newSet: "850 kr",
-        refill: "700 kr",
+          "Utføres med to klassiske vipper i 0,12 mm tykkelse og CC-curl per naturlige vippe. Passer for deg som ønsker et fyldigere og mer markert resultat. Gir en jevn, tett og mørk vippekant som ser ekstra flott ut på bilder.",
+        newSet: "860 kr",
+        refill: "720 kr",
+      },
+      {
+        name: "Mascara-effekt",
+        description:
+          "Gir et veldig naturlig, men markert mascarautseende. Vippene får en naturlig bøy, akkurat som når man bruker mascara. Utføres med klassiske vipper i 0,15 mm tykkelse, CC-curl og korte lengder på 8–9–10 mm, med maks lengde på 10 mm. Perfekt for deg som ønsker et naturlig og elegant resultat.",
+        newSet: "780 kr",
+        refill: "650 kr",
       },
       {
         name: "Mix / Hybrid",
@@ -38,6 +54,14 @@ const priceGroups = [
         refill: "800 kr",
       },
       {
+        name: "Mini Wet Look uten spikes",
+        isNew: true,
+        description:
+          "Utføres med to klassiske vipper i 0,15 mm tykkelse per naturlige vippe (2:1), helt uten spikes. Gir en mørk, fyldig og markert vippekant med jevnt fordelte vipper.",
+        newSet: "899 kr",
+        refill: "750 kr",
+      },
+      {
         name: "Wet Look",
         description:
           "Vippene samles i smale, tydelige «spikes» som gir en blank og våt mascara-effekt. Passer for deg som ønsker et markert, moderne og elegant uttrykk.",
@@ -50,9 +74,9 @@ const priceGroups = [
     title: "Volume",
     items: [
       {
-        name: "Volume YY",
+        name: "Volume YY (4D)",
         description:
-          "YY-vipper gir mer fylde enn klassisk, samtidig som resultatet er mykt og naturlig.",
+          "Har en flat base som gir godt feste og lang holdbarhet. Den doble YY-formen skaper en fyldig, mørk og markert vippekant, med fine, spredte tupper som gir en flott effekt.",
         newSet: "850 kr",
         refill: "700 kr",
       },
@@ -71,18 +95,11 @@ const priceGroups = [
         refill: "800 kr",
       },
       {
-        name: "Volume W-shape 6D, 7D",
+        name: "Medium Volume",
         description:
-          "Tettere W-formede vifter med 6–7 vipper. Gir ekstra fylde, mørkere vippelinje og et mer dramatisk resultat.",
+          "Utføres med ferdiglagde W-formede vipper i 6D eller 7D. Gir et fyldig og tett resultat, men ikke like kraftig som Mega Volume. Passer best for deg som har sterke naturlige vipper som tåler ekstra vekt.",
         newSet: "985 kr",
         refill: "850 kr",
-      },
-      {
-        name: "Mega Volume",
-        description:
-          "Håndlagde vifter med flere ultratynne vipper. Gir maksimal fylde, en mørkere vippelinje og et dramatisk resultat.",
-        newSet: "1099 kr",
-        refill: "950 kr",
       },
     ],
   },
@@ -126,7 +143,14 @@ export default function PriserPage() {
                   className="flex flex-col gap-3 py-4 sm:flex-row sm:items-center sm:justify-between"
                 >
                   <div>
-                    <p className="font-medium">{item.name}</p>
+                    <p className="font-medium">
+                      {item.name}
+                      {item.isNew && (
+                        <span className="ml-2 rounded-full bg-gold px-2 py-0.5 align-middle text-[10px] font-medium uppercase tracking-wide text-white">
+                          Ny
+                        </span>
+                      )}
+                    </p>
                     <p className="mt-1 max-w-md text-sm text-foreground/60">
                       {item.description}
                     </p>
