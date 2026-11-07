@@ -34,8 +34,9 @@ const priceGroups: { title: string; items: PriceItem[] }[] = [
       },
       {
         name: "Mascara-effekt",
+        isNew: true,
         description:
-          "Gir et veldig naturlig, men markert mascarautseende. Vippene får en naturlig bøy, akkurat som når man bruker mascara. Utføres med klassiske vipper i 0,15 mm tykkelse, CC-curl og korte lengder på 8–9–10 mm, med maks lengde på 10 mm. Perfekt for deg som ønsker et naturlig og elegant resultat.",
+          "Gir et veldig naturlig, men markert mascarautseende. Vippene får en naturlig bøy, akkurat som når man bruker mascara. Utføres med klassiske vipper i 0,15 mm tykkelse, CC-curl og en maksimal lengde på 10 mm. Perfekt for deg som liker et naturlig utseende.",
         newSet: "780 kr",
         refill: "650 kr",
       },
