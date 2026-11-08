@@ -26,9 +26,8 @@ const priceGroups: { title: string; items: PriceItem[] }[] = [
       },
       {
         name: "Klassisk+",
-        isNew: true,
         description:
-          "Utføres med to klassiske vipper i 0,12 mm tykkelse og CC-curl per naturlige vippe. Passer for deg som ønsker et fyldigere og mer markert resultat. Gir en jevn, tett og mørk vippekant som ser ekstra flott ut på bilder.",
+          "Gir dobbelt så fyldig resultat som vanlig klassisk vippeextension. Utføres med to klassiske vipper per naturlige vippe. Passer for deg som ønsker mer fylde, men fortsatt vil beholde den klassiske stilen.",
         newSet: "860 kr",
         refill: "720 kr",
       },
