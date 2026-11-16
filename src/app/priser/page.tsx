@@ -95,11 +95,18 @@ const priceGroups: { title: string; items: PriceItem[] }[] = [
         refill: "800 kr",
       },
       {
-        name: "Medium Volume",
+        name: "W-Mega Look",
         description:
-          "Utføres med ferdiglagde W-formede vipper i 6D eller 7D. Gir et fyldig og tett resultat, men ikke like kraftig som Mega Volume. Passer best for deg som har sterke naturlige vipper som tåler ekstra vekt.",
+          "Gir et fyldig, mørkt og fluffy resultat med en dramatisk volumeffekt. Utføres med ferdige W-vipper, med mulighet for å velge mellom 6D og 7D etter ønsket fylde.",
         newSet: "985 kr",
         refill: "850 kr",
+      },
+      {
+        name: "Mega Volume",
+        description:
+          "Gir et ekstra fyldig, fluffy og intenst mørkt resultat. Hos VIPP & VAPP bruker vi 0,07 mm vipper i 10D for å skape maksimal volum og tetthet. Perfekt for deg som elsker dramatiske og glamorøse vipper.",
+        newSet: "1190 kr",
+        refill: "990 kr",
       },
     ],
   },
