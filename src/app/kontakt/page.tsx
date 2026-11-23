@@ -36,7 +36,7 @@ export default function KontaktPage() {
         </div>
         <div>
           <h2 className="font-serif text-xl">Åpningstider</h2>
-          <p className="mt-1 text-foreground/70">Kun etter avtale</p>
+          <p className="mt-1 text-foreground/70">9:30–14:00, eller etter avtale</p>
         </div>
         <div>
           <h2 className="font-serif text-xl">Sosiale medier</h2>
